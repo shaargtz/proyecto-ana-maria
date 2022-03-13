@@ -22,67 +22,76 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #28869e;">
         <div class="container">
-          <p class="text-white">Ana Maria Gutierrez Monroy<br>2022
+          <p class="text-white">DOCENCIA Y TECNOLOGIA<br>Ana Maria Gutierrez Monroy
           </p>
         </div>
       </nav>
-      <!-- Navbar -->
       <div class="container mt-5">
-
-        <div class="mb-5 d-flex justify-content-center">
-          <iframe 
-            src="https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214307&amp;authkey=AD1RtFyHEfGxlFY&amp;em=2&amp;wdAr=1.7777777777777777" 
-            width="952px" 
-            height="576px" 
-            frameborder="0"
-            >
-          </iframe>
+        <div class="row">
+          <div class="col">
+            <img src="./logo.webp" class="img-thumbnail">
+          </div>
+          <div class="col">
+            <div class="mb-5 d-flex justify-content-center">
+              <iframe 
+                src="https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214307&amp;authkey=AD1RtFyHEfGxlFY&amp;em=2&amp;wdAr=1.7777777777777777" 
+                width="476px" 
+                height="288px" 
+                frameborder="0"
+                id="iframe"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button" onclick="buttonClick(0)">El cuerpo</button>
+              <button class="btn btn-primary" type="button" onclick="buttonClick(1)">Adivina adivinador</button>
+              <button class="btn btn-primary" type="button" onclick="buttonClick(2)">Bitacora</button>
+              <button class="btn btn-primary" type="button" onclick="buttonClick(3)">Cronograma</button>
+              <button class="btn btn-primary" type="button" onclick="buttonClick(4)">Juguemos</button>
+              <button class="btn btn-primary" type="button" onclick="buttonClick(5)">Trabajo final</button>
+            </div>
+          </div>
         </div>
-        <hr class="mb-5">
-        <div class="mb-5 d-flex justify-content-center">
-          <iframe 
-            width="626" 
-            height="174" 
-            frameborder="0" 
-            scrolling="no" 
-            src="https://onedrive.live.com/embed?resid=1E885DB5D5E179C0%214311&authkey=%21AM2ZiqkJCd1Oe3M&em=2&wdAllowInteractivity=False&Item='Hoja1'!A3%3AF9&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True">
-          </iframe>
-        </div>
-        <hr class="mb-5">
-        <div class="mb-5 d-flex justify-content-center">
-          <iframe 
-            src="https://onedrive.live.com/embed?resid=1E885DB5D5E179C0%214319&amp;authkey=%21ADoOUkD2N4LXzBI&amp;em=2"            width="952px" 
-            height="576px" 
-            frameborder="0">
-          </iframe>
-        </div>
-        <hr class="mb-5">
-        <div class="mb-5 d-flex justify-content-center">
-          <iframe 
-            src="https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214314&amp;authkey=ACranCYtsAa_dCU&amp;em=2" 
-            width="952px" 
-            height="576px" 
-            frameborder="0">
-          </iframe>
-        </div>
-        <hr class="mb-5">
-        <div class="mb-5 d-flex justify-content-center">
-          <iframe 
-            src="https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214321&amp;authkey=ANuHtDEvg7CxVUM&amp;em=2" 
-            width="952px" 
-            height="576px" 
-            frameborder="0">
-          </iframe>
-        </div>
-        <hr class="mb-5">
+      </div> 
     </div>
-    
+
+    <footer class="text-center text-white fixed-bottom" style="background-color: #28869e;">
+      <br>El genio se hace con 1% de talento y 99% de trabajo<br> ⠀
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function buttonClick(btn) {
+        let e = document.getElementById("iframe");
+        let newSrc = ""
+        switch(btn) {
+          case 0:
+            newSrc = "https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214307&amp;authkey=AD1RtFyHEfGxlFY&amp;em=2&amp;wdAr=1.7777777777777777"
+            break;
+          case 1:
+            newSrc = "https://onedrive.live.com/embed?resid=1E885DB5D5E179C0%214311&authkey=%21AM2ZiqkJCd1Oe3M&em=2&wdAllowInteractivity=False&Item='Hoja1'!A3%3AF9&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"
+            break;
+          case 2:
+            newSrc = "https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214323&amp;authkey=AJXoDDvOmU_Xiu0&amp;em=2"
+            break;
+          case 3:
+            newSrc = "https://onedrive.live.com/embed?resid=1E885DB5D5E179C0%214319&amp;authkey=%21ADoOUkD2N4LXzBI&amp;em=2"
+            break;
+          case 4:
+            window.open('https://app.nearpod.com/presentation?pin=1F5D5EEE94BF6DE1351D0269373C3A52-1')
+            break;
+          case 5:
+            newSrc = "https://onedrive.live.com/embed?cid=1E885DB5D5E179C0&amp;resid=1E885DB5D5E179C0%214314&amp;authkey=ACranCYtsAa_dCU&amp;em=2"
+        }
+        if (newSrc !== "") e.src=newSrc;
+      }
+    </script>
     
 </body>
 </html>
